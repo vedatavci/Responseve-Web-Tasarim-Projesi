@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-size: 16px;
+    /* list-style:none; */
+    font-family: 'Raleway', sans-serif;
+}
+.wrapper{
+    width: 100%;
+}
+.banner{
+    width:100%;
+    height: 100vh;
+    background-image: url(images/dark_tint.png),url(images/bokeh_car_lights_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ 
+}
+header{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    align-self: flex-start;
+}
+header h1{
+    position: absolute;
+    font-size: 1.5em;
+    color: white;
+    margin-left: 30px;
+    top: 30px;
+    float:left;
+}
+.menu ul{
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 20px;
+
+}
+.menu ul li{
+    display: block;
+    float: left;
+    padding: 30px;
+}
+.menu ul li a{
+    color:#DBDBDB;
+    text-decoration: none;
+    font-size:1.02em ;
+    font-weight: 100;
+}
+.menu ul li a:hover{
+    color: white;
+    transition:color 0.2s ease-in-out ;
+
+}
+.altbaslik{
+    color: white;
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.yazi p{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.buton a{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: steelblue;
+    font-size: 1.5em;
+    border-radius: 10px;
+    color: white;
+
+}
+.buton a:hover{
+    background: #61c1e1;
+    transition: background-color 0.2s ease-in-out;
+}
+.bolum1{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.bolum1 h2{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    line-height: 1em;
+
+}
+.bolum1 h2+p{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+}
+.container{
+   max-width: 1000px;
+   margin: 0 auto;
+   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.bolum1 .kutu{
+    flex-basis: 300px;/*varsa 300px yerleş yoksa daral*/
+    flex-shrink: 0;/*daralmayı engellerim enaz 300 ox olabilirsin*/
+    flex-grow: 1;/*varsa boş alan doldururum*/
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-right: 20px;
+    align-self: flex-start;/*başlangıç konumundan başlasın*/
+}
+.bolum1 .kutu:nth-last-child(1){
+    margin-right: 0;
+}
+.bolum1 .kutu i{
+    font-size: 2em;
+    padding: 40px;
+    border-radius: 100%;
+    color: white;
+}
+.bolum1 .kutu i.birinci{
+    background-color: blue;
+}
+.bolum1 .kutu i.ikinci{
+    background-color: green;
+}
+.bolum1 .kutu i.ucuncu{
+    background-color: pink;
+}
+.bolum1 .kutu h3{
+    color: #858585;
+    font-size: 1.5em;
+    margin:20px 0;
+    font-weight: 700;
+}
+.bolum1 .kutu p{
+    color:#858585;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding: 0 30px 30px 30px;;
+
+}
+.bolum2{
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid gray;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 80px;
+    display: block;
+}
+.bolum2 h2{
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 1.5em;
+    color: #474747;
+}
+.bolum2 h2+p{
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    color: #858585;
+}
+.bolum2 .kisiler{
+    width: 100%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bolum2 .kisi{
+    flex-basis: 220px;
+    margin: 50px 10px;
+    text-align: left;
+    flex-grow: 1;
+}
+.bolum2 .kisi img{
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+    margin:5px 10px;
+}
+.bolum2 .kisi h4{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top:  20px;
+    margin-bottom: 5px;
+    color: black;
+}
+.bolum2 .kisi p{
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+article{
+    width: 70%;
+    margin: 50px auto;
+
+}
+article p{
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.5em;
+
+}
+article a{
+    text-decoration: none;
+    padding: 25px 35px;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+    margin-top: 70px;
+    font-size: 1.3em;
+    font-weight: 500;
+    border-radius: 30px;
+    display: inline-block;
+}
+article a:hover{
+    background-color: violet;
+    transition: backround-color 0.2s ease-in-out;
+}
+.bolum3{
+    width: 100%;
+    background-color: rgb(27, 96, 119);
+    height: 100vh;
+    text-align: center;
+    padding-top: 80px;
+
+   
+}
+.bolum3 h2{
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.bolum3 h2+p{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.bolum3 .form{
+    width: 600px;
+    margin:70px auto;
+}
+.bolum3 .form input[type="text"]{
+    width:200px;
+    height: 30px;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.bolum3 .form input[type="email"]{
+    width: 200px;
+    height:30px ;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.bolum3 .form textarea{
+    width: 420px;
+    height:250px ;
+    padding: 3px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.bolum3 .form input[type="submit"]{
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 15px 55px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+.bolum3 .form input[type="submit"]:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+    margin-top: 15px;
+}
+footer {
+	width: 100%;
+	padding: 30px 0;
+	background: #383b43;
+}
+footer .container {
+	margin-top: 50px;
+	border-bottom: 1px solid #979797;
+}
+footer.footerkutu {
+	margin-left: 20px;
+	width: 200px;
+}
+footer h3 {
+	color: #fff;
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+footer .container ul {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+footer .container ul a {
+	color: #cdced0;
+	text-decoration: none;
+	font-size: 0.9em;
+	line-height: 2.5em;
+}
+footer .container ul a:hover {
+	text-decoration: underline;
+}
+.sosyal{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.lisans{
+    width: 100%;
+    margin: 20px auto;
+}
+.lisans p{
+    color: white;
+    float: left;
+    margin-top: 15px;
+    
+}
+.icons{
+    float: right;
+}
+.icons i{
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.temizle{clear: both;}
+.icons i.facebook{
+    background-color: blue;
+}
+.icons i.twitter{
+    background-color: lightseagreen;
+}
+.icons i.linkedin{
+    background-color:blue ;
+}
+@media screen and (max-width:980px) {
+    .banner {
+        height: 60vh;
+    }
+    h2.altbaslik{
+        font-size: 2em;
+    }
+    div .yazi p{
+        font-size: 1em;
+    }
+    .buton a{
+        font-size: .8em;
+        padding: 10px 25px;
+        border-radius: 15px;
+    }
+    .bolum1 .kutu {
+        flex-basis: 100%;
+    }
+    .bolum2 .kisi{
+        flex-basis: 40%;
+    }
+    footer .footerkutu{
+        flex-basis: 40%;
+        margin: 10px 20px;
+    }
+   
+}
+@media screen and (max-width:600px){
+    .bolum2 .kisi{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .bolum2 .kisi img {
+        text-align: center;
+        float: none;
+    }
+    footer .footerkutu{
+        flex-basis: 100%;
+        margin:10px 20px;
+        text-align: center;
+    }
+    footer .icons{
+        clear: both;
+        float: none;
+    }
+     .lisans p{
+         float: none;
+         margin: 10px auto;
+     }
+     .sosyal{
+         text-align: center;
+     }
+     .icons i{
+         margin-top: 20px;
+     }
+     .bolum3 .form {
+         width: 100%;
+         margin: 70px auto;
+     }
+     .bolum3 .form input[type="text"] {
+         width: 80%;
+         margin-bottom: 5px;
+     }
+     .bolum3 .form input[type="email"] {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .bolum3 .form textarea {
+        width: 80%;
+       height: 150px;
+    }
+    .bolum3 .form input[type="submit"] {
+        font-size: 1em;
+        padding: 10px 50px;
+     
+    }
+}
